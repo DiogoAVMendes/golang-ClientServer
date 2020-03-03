@@ -23,5 +23,5 @@ func main() {
 func handleConnection(conn net.Conn) {
 	message, _ := bufio.NewReader(conn).ReadString('\n')
 	fmt.Println("Msg Received:", message)
-	conn.Write([]byte("Palhaço\n"))
+	conn.Write([]byte("Bye, World!\n"))
 }
